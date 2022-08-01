@@ -10,15 +10,33 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{address}}</h5>
+                <p class="card-text">City 🏙: {{agency.city}}</p>
                 <p class="card-text">Street 🏢: {{agency.address}}</p>
                 <p class="card-text">Phone Number 📞: {{agency.phone}}</p>
                 <p class="card-text">Employes 👥: {{agency.employes}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
 {% endfor %}
     </div>
 </div>
+
+{# <div class="container mt-5">
+    <div class="d-flex justify-content-evenly mx-1">
+{% for agency in agencies %}
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Destination</h5>
+                <: class="card-text">City 🏙: {{agency.city}}</p>
+                <p class="card-text">Street 🏢: {{agency.address}}</p>
+                <p class="card-text">Phone Number 📞: {{agency.phone}}</p>
+                <p class="card-text">Employes 👥: {{agency.employes}}</p>
+                <p class="card-text">Price 💰: {{agency.price}}</p>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+</div> #}
 
 
 {% endblock %}
